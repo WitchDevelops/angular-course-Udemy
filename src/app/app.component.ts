@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-course';
+  data = {
+      title: 'Why are Angular learning materials so few and far between?'
+  };
+
+  onClick() {
+    alert("Because it can.");
+  }
+
+  onKeyUp(newTitle:string) {
+this.data.title = newTitle;
+  }
 }
